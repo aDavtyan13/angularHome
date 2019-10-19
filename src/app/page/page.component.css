@@ -1,0 +1,33 @@
+.textInTop{
+    color:blue;
+}
+.serverName{
+    font-weight: bold;
+}
+.serverContent{
+    font-weight: bold;
+}
+input{
+    width: 100%;
+}
+button{
+    padding:7px 13px;
+    background-color: blue;
+    margin-right: 4px;
+    color:white;
+}
+
+/* .twoDivs{
+    border: 1px solid gray;
+    margin-bottom: 11px;
+} */
+.serverNameClass {
+    border-bottom:1px solid gray;
+    background-color: rgb(221, 218, 218);
+    padding: 6px;
+    margin-top: 0;
+}
+
+.serverContentClass{
+    padding:11px 6px;
+}
