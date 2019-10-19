@@ -14,16 +14,15 @@
 
 <button (click)="redButtonClick()">Add Server redPrint</button>
 
-<button>Add Server bluePrint</button>
+<button (click)="blueButtonClick()">Add Server bluePrint</button>
 
 
 <br>
 <br>
 <br>
 
-<div *ngFor = "let dam of arrayOfServerNames" class = "twoDivs">
-    {{serverName}} <br> {{serverContent}} <br><br><br>
-    <!-- <p class = "serverNameClass">{{serverName}}</p>
-    <p class = "serverContentClass" [ngStyle]="{'color' : redButtonClick() ? 'red' : 'green' }">{{serverContent}}</p> -->
 
-</div>
+    <div  *ngFor = "let dam of zhar" class = "twoDivs">
+          <p class = "serverNameClass"> {{ dam.name }} </p>
+          <p class = "serverContentClass" [ngStyle] = "{ 'color' : dam.color }"> {{ dam.content }} </p> 
+    </div>

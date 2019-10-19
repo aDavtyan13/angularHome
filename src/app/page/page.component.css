@@ -17,10 +17,10 @@ button{
     color:white;
 }
 
-/* .twoDivs{
+.twoDivs{
     border: 1px solid gray;
     margin-bottom: 11px;
-} */
+}
 .serverNameClass {
     border-bottom:1px solid gray;
     background-color: rgb(221, 218, 218);

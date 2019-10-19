@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Content } from '@angular/compiler/src/render3/r3_ast';
 
 @Component({
   selector: 'app-page',
@@ -10,9 +11,9 @@ export class PageComponent implements OnInit {
 public serverName;
 public serverContent;
 
-public arrayOfServerNames=[];
-public arrayOfServerContents = [];
 
+public zhar=[];
+public enmiZhar = [];
 
 
   constructor() { }
@@ -22,8 +23,19 @@ public arrayOfServerContents = [];
 
 
   redButtonClick(){
-      // return this.arrayOfServerNames.push(this.serverName),this.arrayOfServerContents.push(this.serverContent);
-      return this.arrayOfServerNames.push(this.serverName);
+      this.zhar.push({
+          'name': this.serverName,
+          'content': this.serverContent,
+          'color': 'red'
+     });
   }
+
+  blueButtonClick(){
+    this.zhar.push({
+        'name': this.serverName,
+        'content': this.serverContent,
+        'color': 'blue'
+   });
+}
 
 }
