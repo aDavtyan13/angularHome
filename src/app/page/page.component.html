@@ -22,7 +22,7 @@
 <br>
 
 
-    <div  *ngFor = "let dam of zhar" class = "twoDivs">
+    <div  *ngFor = "let dam of array" class = "twoDivs">
           <p class = "serverNameClass"> {{ dam.name }} </p>
           <p class = "serverContentClass" [ngStyle] = "{ 'color' : dam.color }"> {{ dam.content }} </p> 
     </div>

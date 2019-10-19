@@ -12,8 +12,7 @@ public serverName;
 public serverContent;
 
 
-public zhar=[];
-public enmiZhar = [];
+public array=[];
 
 
   constructor() { }
@@ -23,7 +22,7 @@ public enmiZhar = [];
 
 
   redButtonClick(){
-      this.zhar.push({
+      this.array.push({
           'name': this.serverName,
           'content': this.serverContent,
           'color': 'red'
@@ -31,7 +30,7 @@ public enmiZhar = [];
   }
 
   blueButtonClick(){
-    this.zhar.push({
+    this.array.push({
         'name': this.serverName,
         'content': this.serverContent,
         'color': 'blue'
